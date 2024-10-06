@@ -1,0 +1,12 @@
+1. __init__ Method
+Automatically Generated: Pydantic generates an __init__ method for your data model classes. This method initializes the model's attributes based on the values passed when creating an instance.
+Behavior: The __init__ method handles the assignment of values to attributes and performs data validation and type conversion.
+2. __repr__ Method
+Automatically Generated: Pydantic provides a __repr__ method that generates a string representation of the model instance. This representation includes the class name and the values of its attributes, making it easier to inspect the object.
+Behavior: The generated __repr__ is useful for debugging and logging because it shows the model's data in a readable format.
+3. __eq__ Method
+Automatically Generated: Pydantic also generates an __eq__ method to enable equality comparison between instances of the model.
+Behavior: This method compares the values of all the attributes to determine if two instances are equal. If all attributes have the same values, the instances are considered equal.
+4. __hash__ Method
+Automatically Generated: If your model is hashable (i.e., if it meets the conditions for hashing), Pydantic generates a __hash__ method.
+Behavior: The __hash__ method allows instances of the model to be used as keys in dictionaries and elements in sets. This is generally generated if all the fields are immutable and hashable.
